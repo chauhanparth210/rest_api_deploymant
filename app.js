@@ -15,7 +15,7 @@ app.use(express.json()); // Parsing requests as in JSON format
 app.use(cors()); //Use CORS
 
 // Connect to database
-mongoose.connect(process.env.MONGODB_URL, {
+mongoose.connect("mongodb://mongo:27017/item", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
